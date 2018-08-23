@@ -1,0 +1,130 @@
+/*
+ * 基础表单
+ */
+.donut-form-horizontal {
+
+  .ant-form-item {
+    width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-label {
+      display: inline-block;
+      width: 76px;
+      line-height: 20px;
+      text-align: left;
+      overflow: visible;
+      vertical-align: top;
+
+      label {
+        display: inline-block;
+        width: 56px;
+        white-space: pre-wrap;
+        top: 9px;
+
+        &:before {
+          display: none;
+        }
+
+        &:after {
+          display: none;
+        }
+
+        .anticon {
+          position: absolute;
+          top: 3px;
+          left: -25px;
+          color: #d8d8d8;
+          z-index: 10;
+        }
+      }
+
+      .ant-form-item-required:after {
+        position: absolute;
+        display: inline-block;
+        content: "\2022";
+        width: 4px;
+        height: 4px;
+        color: #f45858;
+        right: -15px;
+      }
+    }
+
+    .ant-form-item-control-wrapper {
+      display: inline-block;
+      width: 504px;
+      vertical-align: top;
+    }
+
+    &.form-btns {
+      padding-left: 76px;
+
+      button + button {
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+/*
+ * 查询表单
+ */
+.donut-form-inline {
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  .ant-form-item {
+    display: flex;
+    flex: 0 1 31%;
+    margin-right: 3.5%;
+    margin-bottom: 20px;
+
+    &-label {
+      width: 56px;
+      text-align: left;
+      color: #333;
+      line-height: 20px;
+      white-space: pre-wrap;
+      margin-right: 19px;
+      overflow: visible;
+
+      label {
+        top: 9px;
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    &-control-wrapper {
+      flex: 1
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0!important;
+    }
+  }
+
+  .form-btns {
+    flex: 1;
+    margin-right: 0;
+    text-align: right;
+
+    button + button {
+      margin-left: 10px;
+    }
+
+    .donut-form-fold,
+    .donut-form-unfold {
+      color: #60A3F5;
+      margin-left: 40px;
+      cursor: pointer;
+
+      .anticon {
+        margin-left: 10px;
+      }
+    }
+  }
+}
