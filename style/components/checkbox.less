@@ -1,4 +1,4 @@
-// 基本按钮
+// 基本样式
 .ant-checkbox-group {
 
   .ant-checkbox-group-item {
@@ -9,9 +9,9 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-
 }
 
+// [new]按钮样式
 .donut-checkbox-group {
 
   .ant-checkbox-group-item {
@@ -26,6 +26,7 @@
       border: 1px solid @border-color-base;
       border-left: 0;
       z-index: -1;
+      transition: all .3s ease;
 
       & + span {
         height: 34px;
@@ -42,6 +43,17 @@
       &-inner {
         display: none;
       }
+
+      &:before {
+        content: '';
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        width: 7px;
+        height: 7px;
+        background: linear-gradient(45deg, transparent 50%, @border-color-base 0);
+        background-size: 100% 100%;
+      }
     }
 
     .ant-checkbox-checked {
@@ -49,6 +61,10 @@
       border-left: 0;
       box-shadow: -1px 0 0 0 #598FE6;
       background: #F4F7FF;
+
+      &:after {
+        display: none;
+      }
 
       & + span {
         color: @primary-color;
@@ -65,7 +81,11 @@
 
     &:first-child .ant-checkbox {
       border-radius: 2px 0 0 2px;
-      border-left: 1px solid @border-color-base;
+      box-shadow: -1px 0 0 0 @border-color-base;
+
+      &.ant-checkbox-checked {
+        box-shadow: -1px 0 0 0 @primary-color;
+      }
     }
 
     &:last-child .ant-checkbox {

@@ -56,18 +56,34 @@ storiesOf('基础控件', module)
     <CWraper>
       <CItem label='基本样式'>
         <CheckboxGroup options={[
-          { label: 'Apple', value: 'Apple' },
-          { label: 'Pear', value: 'Pear' },
-          { label: 'Orange', value: 'Orange', disabled: true }
+          { label: '选项一', value: '1' },
+          { label: '选项二', value: '2' },
+          { label: '选项三', value: '3' }
+        ]} />
+      </CItem>
+      <CItem>
+        <CheckboxGroup options={[
+          { label: '选项一', value: '1' },
+          { label: '选项二', value: '2' },
+          { label: '选项三', value: '3', disabled: true }
         ]} />
       </CItem>
       <CItem label='按钮样式'>
         <CheckboxGroup
           className='donut-checkbox-group'
           options={[
-            { label: 'Apple', value: 'Apple' },
-            { label: 'Pear', value: 'Pear' },
-            { label: 'Orange', value: 'Orange', disabled: true }
+            { label: '选项一', value: '1' },
+            { label: '选项二', value: '2' },
+            { label: '选项二', value: '3' }
+          ]}/>
+      </CItem>
+      <CItem>
+        <CheckboxGroup
+          className='donut-checkbox-group'
+          options={[
+            { label: '选项一', value: '1' },
+            { label: '选项二', value: '2' },
+            { label: '选项二', value: '3', disabled: true }
           ]}/>
       </CItem>
     </CWraper>
