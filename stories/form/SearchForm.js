@@ -34,7 +34,7 @@ class SearchForm extends React.Component {
         <FormItem label='填写项'>
           <Input placeholder='请填写' />
         </FormItem>
-        <FormItem label='填写项'>
+        <FormItem label='填写项填写项'>
           <Input placeholder='请填写' />
         </FormItem>
         <FormItem label='填写项'>

@@ -11,6 +11,6 @@ export const CItem = props => (
     <div style={{ flexBasis: '56px', marginRight: '40px', color: '#666' }}>
       {props.label}
     </div>
-    <div style={{ flex: 1 }}>{props.children}</div>
+    <div style={{ flex: 'auto' }}>{props.children}</div>
   </div>
 )

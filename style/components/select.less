@@ -1,0 +1,37 @@
+.ant-select {
+  width: 100%;
+
+  &-focused & {
+    box-shadow: none;
+  }
+
+  &-selection {
+    border-radius: @border-radius-base @border-radius-base 0 0;
+  }
+
+}
+
+.ant-select-open, .ant-select-focused {
+  .ant-select-selection {
+    box-shadow: none;
+
+    &:focus,
+    &:active {
+      box-shadow: none;
+    }
+  }
+}
+
+.ant-select-dropdown {
+  box-shadow: none;
+  border: 1px solid @border-color-base;
+  border-radius: 0 0 @border-radius-base @border-radius-base;
+
+  &-menu-item {
+    padding: 9px 13px;
+
+    & + li {
+      border-top: 1px solid @border-color-base;
+    }
+  }
+}
