@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react';
 import {
   Button, Input, message, Tabs, Radio, Checkbox, Select
 } from 'antd';
+import MultipleSelect from '../../components/MultipleSelect'
 import { CWraper, CItem } from '../helper'
 import 'antd/dist/antd.less'
 import '../../style/index.less'
@@ -12,6 +13,8 @@ const RadioButton = Radio.Button
 const CheckboxGroup = Checkbox.Group
 const TabPane = Tabs.TabPane
 const Option = Select.Option
+
+const list = ['a1', 'b2', 'c3', 'd4', 'e5', 'f6', 'g7']
 
 storiesOf('基础控件', module)
   .add('Button 按钮', () => (
@@ -79,7 +82,7 @@ storiesOf('基础控件', module)
       </CItem>
       <CItem>
         <CheckboxGroup
-          className='donut-checkbox-group'
+          className='donut-checkbox-button-group'
           options={[
             { label: '选项一', value: '1' },
             { label: '选项二', value: '2' },
@@ -91,17 +94,17 @@ storiesOf('基础控件', module)
   .add('Message 全局提示', () => (
     <CWraper>
       <CItem label='成功提示'>
-        <Button type='primary' onClick={() => {
+        <Button onClick={() => {
           message.success('This is a message of success');
         }}>Success</Button>
       </CItem>
       <CItem label='错误提示'>
-        <Button type='primary' onClick={() => {
+        <Button onClick={() => {
           message.error('This is a message of error');
         }}>Error</Button>
       </CItem>
       <CItem label='警告提示'>
-        <Button type='primary' onClick={() => {
+        <Button onClick={() => {
           message.warning('This is a message of warning');
         }}>Warning</Button>
       </CItem>
@@ -135,6 +138,7 @@ storiesOf('基础控件', module)
       </Select>
       </CItem>
       <CItem label='多选'>
+        <MultipleSelect list={list} labelInValue />
       </CItem>
     </CWraper>
   ))
