@@ -129,7 +129,7 @@ storiesOf('基础控件', module)
     </CWraper>
   ))
   .add('Select 选择器', () => (
-    <CWraper width='500'>
+    <CWraper width='600'>
       <CItem label='单选'>
       <Select showSearch placeholder="请选择">
         <Option value="1">选项一</Option>
