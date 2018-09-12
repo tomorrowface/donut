@@ -3,8 +3,7 @@ import { storiesOf } from '@storybook/react';
 import {
   Button, Input, message, Tabs, Radio, Checkbox, Select
 } from 'antd';
-// import MultipleSelect from '../../components/MultipleSelect'
-import MultipleSelect from '../../components/Select'
+import MultipleSelect from '../../components/MultipleSelect'
 import { CWraper, CItem } from '../helper'
 import 'antd/dist/antd.less'
 import '../../style/index.less'
