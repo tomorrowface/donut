@@ -18,7 +18,7 @@ class SearchForm extends React.Component {
   render () {
     return (
       <Form
-        className='donut-form-inline'
+        className='antx-form-inline'
         onSubmit={this.handleSubmit}
         style={{ paddingTop: '30px', paddingBottom: '6px' }}>
         <FormItem label='填写项'>
@@ -27,9 +27,6 @@ class SearchForm extends React.Component {
             <Option value="lucy">Lucy</Option>
             <Option value="tom">Tom</Option>
           </Select>
-        </FormItem>
-        <FormItem label='填写项'>
-          <Input placeholder='请填写' />
         </FormItem>
         <FormItem label='填写项'>
           <Input placeholder='请填写' />

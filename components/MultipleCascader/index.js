@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Checkbox } from 'antd'
 import './index.less'
 
-class MultipleSelect extends React.Component {
+class MultipleCascader extends React.Component {
 
   static propTypes = {
     list: PropTypes.array,
@@ -193,4 +193,4 @@ class MultipleSelect extends React.Component {
   }
 }
 
-export default MultipleSelect
+export default MultipleCascader

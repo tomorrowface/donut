@@ -28,9 +28,7 @@ class FormModal extends React.Component {
         cancelText='取消'
         onOk={this.handleSubmit}
         >
-        <Form
-          className='donut-form-horizontal'
-          >
+        <Form className='antx-form-horizontal'>
           <FormItem label='联系人'>
             {
               getFieldDecorator('contact_name', {

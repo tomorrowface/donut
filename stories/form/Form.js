@@ -22,7 +22,7 @@ class D_Form extends React.Component {
 
     return (
       <Form
-        className='donut-form-horizontal'
+        className='antx-form-horizontal'
         onSubmit={this.handleSubmit}
         style={{ paddingTop: '30px', paddingBottom: '6px' }}>
         <FormItem label='联系人'>

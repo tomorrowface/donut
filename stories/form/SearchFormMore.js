@@ -32,7 +32,7 @@ class SearchFormMore extends React.Component {
 
     return (
       <Form
-        className='donut-form-inline'
+        className='antx-form-inline'
         onSubmit={this.handleSubmit}
         style={{ paddingTop: '30px', paddingBottom: '6px' }}>
         <FormItem label='填写项'>
@@ -67,11 +67,11 @@ class SearchFormMore extends React.Component {
           <Button>重置</Button>
           {
             isFold
-            ? <span className='donut-form-unfold' onClick={this.toggleFold}>
+            ? <span className='antx-form-unfold' onClick={this.toggleFold}>
                 收起更多选项
                 <Icon type='up' />
               </span>
-            : <span className='donut-form-fold' onClick={this.toggleFold}>
+            : <span className='antx-form-fold' onClick={this.toggleFold}>
                 展开更多选项
                 <Icon type='down' />
               </span>

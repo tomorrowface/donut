@@ -3,7 +3,8 @@ import { storiesOf } from '@storybook/react';
 import {
   Button, Input, message, Tabs, Radio, Checkbox, Select
 } from 'antd';
-import MultipleSelect from '../../components/MultipleSelect'
+// import MultipleSelect from '../../components/MultipleSelect'
+import MultipleSelect from '../../components/Select'
 import { CWraper, CItem } from '../helper'
 import 'antd/dist/antd.less'
 import '../../style/index.less'
@@ -14,7 +15,8 @@ const CheckboxGroup = Checkbox.Group
 const TabPane = Tabs.TabPane
 const Option = Select.Option
 
-const list = ['a1', 'b2', 'c3', 'd4', 'e5', 'f6', 'g7']
+const list = ['a1', 'b2', 'c3', 'd4', 'e5', 'f6', 'g7',
+'a11', 'b22', 'c33', 'd44', 'e55', 'f66', 'g77',]
 
 storiesOf('基础控件', module)
   .add('Button 按钮', () => (
@@ -73,7 +75,7 @@ storiesOf('基础控件', module)
       </CItem>
       <CItem label='按钮样式'>
         <CheckboxGroup
-          className='donut-checkbox-group'
+          className='antx-checkbox-group'
           options={[
             { label: '选项一', value: '1' },
             { label: '选项二', value: '2' },
@@ -82,7 +84,7 @@ storiesOf('基础控件', module)
       </CItem>
       <CItem>
         <CheckboxGroup
-          className='donut-checkbox-button-group'
+          className='antx-checkbox-button-group'
           options={[
             { label: '选项一', value: '1' },
             { label: '选项二', value: '2' },
@@ -137,6 +139,9 @@ storiesOf('基础控件', module)
         <Option value="3">选项三</Option>
       </Select>
       </CItem>
+      {/* <CItem label='多选'>
+        <MultipleSelect list={list} labelInValue />
+      </CItem> */}
       <CItem label='多选'>
         <MultipleSelect list={list} labelInValue />
       </CItem>
