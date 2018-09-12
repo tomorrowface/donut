@@ -40,7 +40,7 @@ class SearchForm extends React.Component {
         <FormItem label='填写项'>
           <Input placeholder='请填写' />
         </FormItem>
-        <FormItem className='form-btns'>
+        <FormItem className='antx-form-btns'>
           <Button type="primary" htmlType="submit">查询</Button>
           <Button>重置</Button>
         </FormItem>

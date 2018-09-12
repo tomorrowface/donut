@@ -63,7 +63,7 @@ class D_Form extends React.Component {
             )
           }
         </FormItem>
-        <FormItem className='form-btns'>
+        <FormItem className='antx-form-btns'>
           <Button type="primary" htmlType="submit">确定</Button>
           <Button>取消</Button>
         </FormItem>

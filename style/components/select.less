@@ -1,5 +1,6 @@
 .ant-select {
   width: 100%;
+  caret-color: @primary-color;
 
   &-focused & {
     box-shadow: none;
@@ -94,6 +95,38 @@
 
     &:hover:after {
       display: table;
+    }
+  }
+}
+
+.antx-multiple-select {
+
+  &:before {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.25);
+    font-size: 12px;
+    content: '\E61D';
+    transition: transform .3s;
+    transform-origin: 50% 50%;
+    font-family: "anticon" !important;
+    margin-top: -6px;
+  }
+
+  &.ant-select-open&:before {
+    transform: rotate(180deg);
+  }
+
+  .ant-select-selection--multiple {
+    .ant-select-selection__choice.ant-select-selection__choice__disabled {
+      border: none;
+      color: #999;
+      float: right;
+      background-color: #fff;
+      margin-right: 12px;
     }
   }
 }

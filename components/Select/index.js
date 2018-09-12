@@ -1,14 +1,7 @@
 import React from 'react'
 import { Select } from 'antd'
-import './index.less'
 
 class MutipleSelect extends React.Component {
-
-  constructor (props) {
-    super(props)
-
-
-  }
 
   getMaxTagPlaceholder = (omittedValues) => {
     return `...已选${omittedValues.length+2}项`
@@ -21,9 +14,8 @@ class MutipleSelect extends React.Component {
         className='antx-multiple-select'
         mode="multiple"
         style={{ width: '100%' }}
-        placeholder="Please select"
-        showArrow={true}
-        defaultValue={['a1', 'a11']}
+        placeholder="请选择"
+        allowClear
         maxTagCount={2}
         maxTagPlaceholder={this.getMaxTagPlaceholder}
       >

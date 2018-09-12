@@ -62,7 +62,7 @@ class SearchFormMore extends React.Component {
             </FormItem>
           </React.Fragment>
         }
-        <FormItem className='form-btns'>
+        <FormItem className='antx-form-btns'>
           <Button type='primary' htmlType='submit'>查询</Button>
           <Button>重置</Button>
           {
